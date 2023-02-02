@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" prefHeight="708.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="558.0" prefWidth="658.0">
+         <children>
+            <ImageView fitHeight="561.0" fitWidth="658.0" layoutY="-1.0">
+               <image>
+                  <Image url="@../img/Untitled-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="flyImage" fitHeight="508.0" fitWidth="658.0" layoutY="53.0">
+               <image>
+                  <Image url="@../img/MarsRoverLandingBackground.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="parachute" fitHeight="259.0" fitWidth="266.0" layoutX="182.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../img/favpng_parachute.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="layOut" fitHeight="576.0" fitWidth="658.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/PanelLayout.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mainRover" fitHeight="46.0" fitWidth="110.0" layoutX="260.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/MainRover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="thrusterAttachment" fitHeight="63.0" fitWidth="142.0" layoutX="257.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ThrusterAttachment.png" />
+               </image>
+            </ImageView>
+            <Group fx:id="thrusters" layoutX="244.4524688720703" layoutY="321.8656005859375" visible="false">
+               <children>
+                  <ImageView fx:id="thruster1" fitHeight="85.0" fitWidth="13.0" layoutX="4.7104644775390625" layoutY="5.914154052734375" pickOnBounds="true" preserveRatio="true" rotate="17.7">
+                     <image>
+                        <Image url="@../img/thruster1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="thrusters2" fitHeight="85.0" fitWidth="13.0" layoutX="13.547531127929688" layoutY="8.1343994140625" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/thruster1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="thrusters213" fitHeight="85.0" fitWidth="13.0" layoutX="38.24382019042969" layoutY="13.86334228515625" pickOnBounds="true" preserveRatio="true" rotate="22.8">
+                     <image>
+                        <Image url="@../img/thruster1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="thrusters214" fitHeight="85.0" fitWidth="13.0" layoutX="93.54753112792969" layoutY="3.1343994140625" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/thruster1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="thrusters215" fitHeight="85.0" fitWidth="13.0" layoutX="94.65983581542969" layoutY="1.34271240234375" pickOnBounds="true" preserveRatio="true" rotate="-14.9">
+                     <image>
+                        <Image url="@../img/thruster1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="thrusters21" fitHeight="85.0" fitWidth="13.0" layoutX="37.98017883300781" layoutY="14.13726806640625" pickOnBounds="true" preserveRatio="true" rotate="11.9">
+                     <image>
+                        <Image url="@../img/thruster1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="thrusters212" fitHeight="85.0" fitWidth="13.0" layoutX="128.99998474121094" layoutY="5.8665771484375" pickOnBounds="true" preserveRatio="true" rotate="-17.7" y="3.0">
+                     <image>
+                        <Image url="@../img/thruster1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="thrusters211" fitHeight="85.0" fitWidth="13.0" layoutX="120.54753112792969" layoutY="9.1343994140625" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/thruster1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <ImageView fx:id="backShell" fitHeight="79.0" fitWidth="139.0" layoutX="251.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/BackShield.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="heatShield" fitHeight="44.0" fitWidth="139.0" layoutX="252.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/heatShield.png" />
+               </image>
+               <effect>
+                  <Glow level="0.42" />
+               </effect>
+            </ImageView>
+            <Label fx:id="MissionCompleted" alignment="CENTER" layoutY="178.0" prefHeight="216.0" prefWidth="658.0" style="-fx-background-color: #000000;" text="Mission Completed :) " textFill="#2fff00" visible="false" wrapText="true">
+               <font>
+                  <Font name="Avenir Book" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainPane2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="658.0" style="-fx-background-color: #000000#000000;">
+         <children>
+            <Text fill="#00ff26" layoutX="26.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Stage:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#00ff26" layoutX="27.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocity:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#00ff26" layoutX="27.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altitude: ">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#00ff26" layoutX="25.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Distance:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#00ff26" layoutX="24.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time To Next Phase:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#00ff26" layoutX="25.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Until Landing:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="velocityText" fill="#00ff26" layoutX="99.0" layoutY="61.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocity:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="altitudeText" fill="#00ff26" layoutX="101.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocity:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="distanceText" fill="#00ff26" layoutX="106.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocity:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="timeToNextPhaseText" fill="#00ff26" layoutX="191.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocity:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="timeUntilLandingText" fill="#00ff26" layoutX="182.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocity:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="currentStage1" fill="#00ff26" layoutX="145.0" layoutY="33.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocity:">
+               <font>
+                  <Font name="Avenir Book" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#00ff26" fontSmoothingType="LCD" layoutX="505.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Live Stream" textAlignment="CENTER" wrappingWidth="139.0">
+               <font>
+                  <Font name="Avenir Book" size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
